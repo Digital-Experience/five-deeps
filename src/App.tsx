@@ -42,7 +42,8 @@ import { Point } from "@arcgis/core/geometry";
 setAssetPath("https://js.arcgis.com/calcite-components/1.0.0-beta.80/assets");
 
 const color = [255, 255, 255];
-externalRenderers.forceWebGLContext(1);
+// the code below throws an error in WebGL
+// externalRenderers.forceWebGLContext(1);
 @subclass("App")
 export class App extends Widget {
   private config = new Configuration();
